@@ -17,13 +17,17 @@
 
 .container-bubbles img {
   width: 35px;
-  animation: bubble 4s infinite;
+  animation: bubble 5s infinite;
+}
+
+.container-bubbles img:nth-child(even) {
+  width: 15px;
+  height: 15px;
 }
 
 .container-bubbles img:nth-child(1) {
-  width: 15px;
-  height: 15px;
   animation-delay: 3s;
+  animation-duration: 4.5s;
 }
 
 .container-bubbles img:nth-child(2) {
@@ -31,18 +35,15 @@
 }
 
 .container-bubbles img:nth-child(3) {
-  width: 15px;
-  height: 15px;
   animation-delay: 2s;
 }
 
 .container-bubbles img:nth-child(4) {
-  animation-delay: 5s;
+  animation-delay: -5s;
+  animation-duration: 6s;
 }
 
 .container-bubbles img:nth-child(5) {
-  width: 15px;
-  height: 15px;
   animation-delay: 3.5s;
 }
 
@@ -51,13 +52,42 @@
 }
 
 .container-bubbles img:nth-child(7) {
-  width: 15px;
-  height: 15px;
   animation-delay: 3s;
+  animation-duration: 5s;
 }
 
 .container-bubbles img:nth-child(8) {
-  animation-delay: 8s;
+  animation-delay: 0.5s;
+}
+
+.container-bubbles img:nth-child(9) {
+  animation-delay: 9s;
+}
+
+.container-bubbles img:nth-child(10) {
+  animation-delay: -1s;
+  animation-duration: 8s;
+}
+
+.container-bubbles img:nth-child(11) {
+  animation-delay: 2.3s;
+}
+
+.container-bubbles img:nth-child(12) {
+  animation-delay: 1.8s;
+}
+
+.container-bubbles img:nth-child(13) {
+  animation-delay: -2s;
+  animation-duration: 5s;
+}
+
+.container-bubbles img:nth-child(14) {
+  animation-delay: -1.1s;
+}
+
+.container-bubbles img:nth-child(15) {
+  animation-delay: 1.7s;
 }
 
 @keyframes bubble {
@@ -73,5 +103,49 @@
   100% {
     opacity: 0;
     transform: translateY(-100vh);
+  }
+}
+
+@media (max-width: 768px) {
+  .container-bubbles img {
+    width: 15px;
+    animation: bubble 4s infinite;
+  }
+
+  .container-bubbles img:nth-child(odd) {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .container-bubbles img:nth-child(1) {
+    animation-delay: 3s;
+  }
+  
+  .container-bubbles img:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  .container-bubbles img:nth-child(3) {
+    animation-delay: 2s;
+  }
+  
+  .container-bubbles img:nth-child(4) {
+    animation-delay: 5s;
+  }
+  
+  .container-bubbles img:nth-child(5) {
+    animation-delay: 3.5s;
+  }
+  
+  .container-bubbles img:nth-child(6) {
+    animation-delay: 7s;
+  }
+  
+  .container-bubbles img:nth-child(7) {
+    animation-delay: 3s;
+  }
+  
+  .container-bubbles img:nth-child(8) {
+    animation-delay: 8s;
   }
 }
